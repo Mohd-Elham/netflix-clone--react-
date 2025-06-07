@@ -1,43 +1,160 @@
-import { FaFacebook, FaInstagram , FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <>
-      <div className="text-xs bg-black text-gray-300 px-64 pb-8">
-        <div className="text-white flex gap-4 mb-4">
-          <FaInstagram  className="text-4xl"/>
-          <FaXTwitter  className="text-4xl"/>
-          <FaYoutube  className="text-4xl"/>
-          <FaFacebook  className="text-4xl"/>
+    <footer className="bg-black text-gray-300">
+      <div className="px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-64 pb-8 pt-16">
+        {/* Social Media Icons */}
+        <div className="flex gap-4 sm:gap-6 mb-8 justify-center sm:justify-start">
+          <a 
+            href="#" 
+            className="text-gray-300 hover:text-white transition-colors duration-200"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="text-2xl sm:text-3xl lg:text-4xl" />
+          </a>
+          <a 
+            href="#" 
+            className="text-gray-300 hover:text-white transition-colors duration-200"
+            aria-label="Twitter"
+          >
+            <FaXTwitter className="text-2xl sm:text-3xl lg:text-4xl" />
+          </a>
+          <a 
+            href="#" 
+            className="text-gray-300 hover:text-white transition-colors duration-200"
+            aria-label="YouTube"
+          >
+            <FaYoutube className="text-2xl sm:text-3xl lg:text-4xl" />
+          </a>
+          <a 
+            href="#" 
+            className="text-gray-300 hover:text-white transition-colors duration-200"
+            aria-label="Facebook"
+          >
+            <FaFacebook className="text-2xl sm:text-3xl lg:text-4xl" />
+          </a>
         </div>
-        <div className="text-xs text-left grid grid-cols-4 bg-black text-gray-300 pb-4">
-          <ul className="list-none flex flex-col gap-y-3">
-            <li>Audio Description</li>
-            <li>Help Centre</li>
-            <li>Gift Cards</li>
+
+        {/* Footer Links */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+          <ul className="flex flex-col gap-y-3">
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Audio Description
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Help Centre
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Gift Cards
+              </a>
+            </li>
           </ul>
-          <ul className="list-none flex flex-col gap-y-3">
-            <li>Media Centre</li>
-            <li>Investor Relations</li>
-            <li>Jobs</li>
+
+          <ul className="flex flex-col gap-y-3">
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Media Centre
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Investor Relations
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Jobs
+              </a>
+            </li>
           </ul>
-          <ul className="list-none flex flex-col gap-y-3">
-            <li>Terms of Use</li>
-            <li>Privacy</li>
-            <li>Legal Notices</li>
+
+          <ul className="flex flex-col gap-y-3">
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Terms of Use
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Legal Notices
+              </a>
+            </li>
           </ul>
-          <ul className="list-none flex flex-col gap-y-3">
-            <li>Cookie Preferences</li>
-            <li>Corporate Information</li>
-            <li>Contact Us</li>
+
+          <ul className="flex flex-col gap-y-3">
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Cookie Preferences
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Corporate Information
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                className="text-xs sm:text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
-        <p className="bg-black text-xs text-gray-500 py-4">
-          © 1997-2023 Netflix, Inc.
+
+
+        {/* Copyright */}
+        <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
+          © 1997-2024 Netflix, Inc.
         </p>
       </div>
-    </>
+    </footer>
   );
 };
 
